@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: column;
 
-    height: 100vh;
+    height: 120vh;
 
     background-image: url(../img/banner.jpg);
     background-position: center;
@@ -84,6 +84,13 @@
     }
 }
 
+@media(max-width: 350px){
+    .hero h1{
+        font-size: 4.5vh;
+        margin: 3vh 5vw;
+    }
+}
+
 @media(max-width: 1000px){
     .hero .signup-cluster{
         align-self: center;
@@ -123,7 +130,7 @@
 
 .hero .signup-cluster .signup p{
     color: #fff;
-    font-size: 4vh;
+    font-size: 150%;
     margin-top: 8%;
     margin-left: 10%;
 }
@@ -151,7 +158,7 @@
 }
 
 .hero .signup-cluster .signup form input, button{
-    font-size: 2.5vh;
+    font-size: 100%;
     
     width: 48%;
     height: 28%;

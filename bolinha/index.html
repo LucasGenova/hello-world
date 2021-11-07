@@ -13,6 +13,9 @@
     <link href='https://css.gg/check-r.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="css/styles.css">
+
+    <script type="text/javascript" src="form-validation.js"></script>
+    <script src="vanilla-masker.min.js"></script>
 </head>
 <body>
     <section class="hero"> 
@@ -25,11 +28,11 @@
             <div class="signup">
                 <p>GET STARTED NOW</p>
                 
-                <form>
-                    <input placeholder="Full Name">
-                    <input placeholder="Email Address">
-                    <input placeholder="Phone Number">
-                    <input placeholder="Zip Code">
+                <form id="form">
+                    <input id="name" placeholder="Full Name" required>
+                    <input id="email" placeholder="Email Address" required pattern="^[a-zA-Z0-9.-]+[@][a-z]+[.][a-z]+[ ]*$">
+                    <input id="number" placeholder="Phone Number" required pattern="^([+][0-9]{1,3})?[ ]*([(][0-9]{2}[)]|[0-9]{2})[ ]*([0-9]{5}[-]?[0-9]{4})$">
+                    <input id="zip" placeholder="Zip Code" required pattern="[0-9]{5}[-]*[0-9]{3}">
 
                     <button>SIGN UP</button>
                 </form>  
@@ -109,5 +112,4 @@
     </section>
 
     <footer>Copyright © 2020. All rights reserved| Designed by: buylandingpagedesign.com</footer>
-</body>
 </html>
