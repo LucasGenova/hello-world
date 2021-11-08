@@ -62,6 +62,34 @@
     }
 }
 
+.navbar{
+    display: flex;
+    max-width: 300px;
+    background-color: #d40000;
+    justify-content: space-around;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+
+    margin-right: 5%;
+
+}
+
+@media(max-width: 650px){
+    .navbar{
+        margin-right: 0%;
+    }
+}
+
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .hero h1{
     color: #fff;
     font-size: 8vh; 
